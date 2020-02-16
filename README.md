@@ -9,7 +9,8 @@ As defined in the problem statement, a class call 'Firewall' is created with a c
 A list of four dictionaries is created. The index of the required dictionary to store the port and IP adress is defined is defined by the combination of direction and protocol. Each dictionary ('directionMap'), has a 'key' of the port or a range of port depending on what is specified in the rules. 
 To map the port to the IP address in dictionary, for a fast look up a Trie data structure is used to store the IP values.
 Even though the lookup will take place in O(1), the total space complexity takes a hit in the worst case, because we will require O(total port values * total IP address values)
-The code can be run by using 'python firewall.py rules input'
+The code can be run by using 
+```python firewall.py rules input```
 where rules and input are text files containing the required.
 
 ### Optimization
